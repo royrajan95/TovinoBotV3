@@ -431,7 +431,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
             msg1 = await query.message.reply(
                 f'<b> Hai 👋 {query.from_user.mention} </b>😍\n\n<b>📫 Your File is Ready</b>\n\n'           
-                f'<b>📂 Fɪʟᴇ Nᴀᴍᴇ</b> : <code>[DK_BOTx] {title}</code>\n\n'              
+                f'<b>📂 Fɪʟᴇ Nᴀᴍᴇ</b> : <code>[MR MOVIES] {title}</code>\n\n'              
                 f'<b>⚙️ Fɪʟᴇ Sɪᴢᴇ</b> : <b>{size}</b>',
                 True,
                 'html',
@@ -566,9 +566,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about_menu":
         buttons = [[
-        InlineKeyboardButton('ᴅᴋ ʙᴏᴛx', url='https://t.me/dk_botx'),
-        InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/dkbotxchats'),
-        InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start')
+        InlineKeyboardButton('mr movies', url='https://t.me/MOVIE_ROCKERS_MR'),
+        InlineKeyboardButton('group', url='https://t.me/MOVIEROCKERS_GROUP'),
+        InlineKeyboardButton('back', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.delete()
