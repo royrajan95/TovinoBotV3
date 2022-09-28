@@ -496,12 +496,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "pages":
         await query.answer()
     elif query.data == "start":
-        buttons = [[
-        InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true') ] ,
-     [
-        InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about_menu'),
-        InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close')
-    ]]
+        buttons =  [[
+                    InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/proautofilter_bot?startgroup=true')
+                ],[
+                    InlineKeyboardButton('🤴ʙᴏᴛ ᴏᴡɴᴇʀ🤴',  url='https://t.me/alanwalker_tg'),
+                    InlineKeyboardButton('🍿ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ🍿', url='https://t.me/MOVIEROCKERS_GROUP')
+                ],[
+                    InlineKeyboardButton('ℹ️ ʜᴇʟᴘ', callback_data='help'),
+                    InlineKeyboardButton('😊 ᴀʙᴏᴜᴛ', callback_data='about')
+                ],[
+                    InlineKeyboardButton('💥 ᴊᴏɪɴ ᴏᴜʀ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ 💥', url='https://t.me/MOVIE_ROCKERS_MR')
+                  ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.delete()
         if not START_IMAGE_URL:
