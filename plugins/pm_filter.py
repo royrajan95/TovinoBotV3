@@ -542,7 +542,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('𝖩𝗌𝗈𝗇', callback_data='json'),
              InlineKeyboardButton('𝖨𝗇𝖿𝗈', callback_data='info'),
             InlineKeyboardButton('𝖢𝖺𝗋𝖻𝗈𝗇', callback_data='carbon')
-        ]]
+         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.HELP_TXT.format(query.from_user.mention),
@@ -568,7 +568,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "about_menu":
         buttons = [[
         InlineKeyboardButton('MR MOVIES', url='https://t.me/MOVIE_ROCKERS_MR'),
-        InlineKeyboardButton('GROUP', url='https://t.me/MOVIEROCKERS_GROUP'),
+        InlineKeyboardButton('NEW MOVIES', url='https://t.me/+qYEfmWJFZQ80Njk1'),
         InlineKeyboardButton('BACK', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -657,6 +657,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.MUTE_TXT,
+            reply_markup=reply_markup,
+            parse_mode='html'
+         )
+    elif query.data == "covid":
+        buttons = [[
+            InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.COVIDZ_TXT,
+            disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode='html'
         )
@@ -860,12 +871,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start')
         ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.ADMIN_TXT,
-            reply_markup=reply_markup,
-            parse_mode='html'
-         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.ADMIN_TXT,
