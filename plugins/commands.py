@@ -25,11 +25,16 @@ async def start(client, message: pyrogram.types.Message):
 
     if message.chat.type in ['group', 'supergroup']:
         buttons = [[
-        InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true') ] ,
-      [
-        InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about_menu'),
-        InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close')
-    ]]
+                    InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/proautofilter_bot?startgroup=true')
+                ],[
+                    InlineKeyboardButton('🤴ʙᴏᴛ ᴏᴡɴᴇʀ🤴',  url='https://t.me/alanwalker_tg'),
+                    InlineKeyboardButton('🍿ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ🍿', url='https://t.me/MOVIEROCKERS_GROUP')
+                ],[
+                    InlineKeyboardButton('ℹ️ ʜᴇʟᴘ', callback_data='help'),
+                    InlineKeyboardButton('😊 ᴀʙᴏᴜᴛ', callback_data='about')
+                ],[
+                    InlineKeyboardButton('💥 ᴊᴏɪɴ ᴏᴜʀ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ 💥', url='https://t.me/MOVIE_ROCKERS_MR')
+                  ]]
        
         reply_markup = InlineKeyboardMarkup(buttons)
         if not START_IMAGE_URL:
@@ -71,11 +76,16 @@ async def start(client, message: pyrogram.types.Message):
     if len(message.command) != 2:
 
         buttons = [[
-        InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true') ] ,
-      [
-        InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about_menu'),
-        InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close')
-    ]]
+                    InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/proautofilter_bot?startgroup=true')
+                ],[
+                    InlineKeyboardButton('🤴ʙᴏᴛ ᴏᴡɴᴇʀ🤴',  url='https://t.me/alanwalker_tg'),
+                    InlineKeyboardButton('🍿ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ🍿', url='https://t.me/MOVIEROCKERS_GROUP')
+                ],[
+                    InlineKeyboardButton('ℹ️ ʜᴇʟᴘ', callback_data='help'),
+                    InlineKeyboardButton('😊 ᴀʙᴏᴜᴛ', callback_data='about')
+                ],[
+                    InlineKeyboardButton('💥 ᴊᴏɪɴ ᴏᴜʀ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ 💥', url='https://t.me/MOVIE_ROCKERS_MR')
+                  ]]
 
         reply_markup = InlineKeyboardMarkup(buttons)
 
@@ -121,11 +131,16 @@ async def start(client, message: pyrogram.types.Message):
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
 
         buttons = [[
-        InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true') ] ,
-      [
-        InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about_menu'),
-        InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close')
-    ]]
+                    InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/proautofilter_bot?startgroup=true')
+                ],[
+                    InlineKeyboardButton('🤴ʙᴏᴛ ᴏᴡɴᴇʀ🤴',  url='https://t.me/alanwalker_tg'),
+                    InlineKeyboardButton('🍿ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ🍿', url='https://t.me/MOVIEROCKERS_GROUP')
+                ],[
+                    InlineKeyboardButton('ℹ️ ʜᴇʟᴘ', callback_data='help'),
+                    InlineKeyboardButton('😊 ᴀʙᴏᴜᴛ', callback_data='about')
+                ],[
+                    InlineKeyboardButton('💥 ᴊᴏɪɴ ᴏᴜʀ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ 💥', url='https://t.me/MOVIE_ROCKERS_MR')
+                  ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
