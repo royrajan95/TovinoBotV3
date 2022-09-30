@@ -536,7 +536,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('𝖢𝗈𝗇𝗇𝖾𝖼𝗍𝗂𝗈𝗇', callback_data='coct')
             ],[
             InlineKeyboardButton('𝖡𝖺𝗇𝗌', callback_data='ban'),
-            InlineKeyboardButton('𝖠𝖻𝗈𝗎𝗍', callback_data='about_menu'),
+            InlineKeyboardButton('😊 ᴀʙᴏᴜᴛ', callback_data='about'),
             InlineKeyboardButton('𝖲𝗍𝖺𝗍𝗎𝗌', callback_data='stats')
             ],[
             InlineKeyboardButton('𝖩𝗌𝗈𝗇', callback_data='json'),
@@ -556,7 +556,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about_menu')
+                        InlineKeyboardButton('😊 ᴀʙᴏᴜᴛ', callback_data='about')
                     ],
                     [
                         InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start'),
@@ -567,8 +567,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about_menu":
         buttons = [[
-        InlineKeyboardButton('MR MOVIES', url='https://t.me/MOVIE_ROCKERS_MR'),
-        InlineKeyboardButton('NEW MOVIES', url='https://t.me/+qYEfmWJFZQ80Njk1'),
+        InlineKeyboardButton('ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ', url='https://t.me/MoviesLandBackup'),
+        InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url='https://t.me/+kmEEWpBgDCg0YzA1'),
         InlineKeyboardButton('BACK', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1103,7 +1103,7 @@ async def auto_filter(client, msg: pyrogram.types.Message, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>Hai 👋 {message.from_user.mention}</b> 😍\n\n<b>📁 Found ✨  Files For Your Query : {search} 👇</b> "
+        cap = f"<b>Hello 👋 {message.from_user.mention}</b> 😍\n\n<b>📁 Found ✨  Files For Your Query : {search} 👇</b> "
     if imdb and imdb.get('poster'):
         try:
             fmsg = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
