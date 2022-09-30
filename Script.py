@@ -25,7 +25,7 @@ class script(object):
 """
     ABOUT_TXT = """
 ○ 𝖬𝗒 𝖭𝖺𝗆e : Tᴏᴠɪɴᴏ
-○ 𝖢𝗋𝖾𝖺𝗍𝗈𝗋 : <a href='https://t.me/aboutme_DK'>𝖳𝗁𝗂𝗌 𝖯𝖾𝗋𝗌𝗈𝗇</a>
+○ 𝖢𝗋𝖾𝖺𝗍𝗈𝗋 : <a href='https://t.me/proautofilter_bot>𝖳𝗁𝗂𝗌 𝖯𝖾𝗋𝗌𝗈𝗇</a>
 ○ 𝖫𝖺𝗇𝗀𝗎𝖺𝗀𝖾 : 𝖯𝗒𝗍𝗁𝗈𝗇 𝟥 
 ○ 𝖫𝗂𝖻𝗋𝖺𝗋𝗒 : 𝖯𝗒𝗋𝗈𝗀𝗋𝖺𝗆 𝖺𝗌𝗒𝗇𝖼𝗂𝗈 𝟢.𝟣𝟩.𝟣 
 ○ 𝖲𝖾𝗋𝗏𝖾𝗋 : Contabo
@@ -33,7 +33,7 @@ class script(object):
 ○ 𝖡𝗎𝗂𝗅𝖽 𝖲𝗍𝖺𝗍𝗎𝗌 : 𝖵9.8 [BeTa]
 """
     SOURCE_TXT = """<b>NOTE:</b>
-- 𝖳𝗈𝗏𝗂𝗇𝗈 𝖨𝗌 𝖺 𝖮𝗉𝖾𝗇 𝖲𝗈𝗎𝗋𝖼𝖾 𝖯𝗋𝗈𝗃𝖾𝖼𝗍 𝖻𝗒 𝖳𝖾𝖺𝗆 @DK_BOTx  
+- 𝖳𝗈𝗏𝗂𝗇𝗈 𝖨𝗌 𝖺 𝖮𝗉𝖾𝗇 𝖲𝗈𝗎𝗋𝖼𝖾 𝖯𝗋𝗈𝗃𝖾𝖼𝗍 𝖻𝗒 𝖳𝖾𝖺𝗆 @proautofilter_bot
 
 CODES:
 
@@ -211,7 +211,8 @@ Google's TTS engine by way of the gTTS library
     CARBONZ_TXT = """<b>Carbon</b>
    ➥First you sent an text
    ➥Then you ʀᴇᴘʟʏ ᴛᴏ that ᴛᴇxᴛ ᴍᴇssᴀɢᴇ ᴛᴏ ᴍᴀᴋᴇ ᴄᴀʀʙᴏɴ.
-   ➥ 𝖳𝗁𝗂𝗌 𝖢𝗈𝗆𝗆𝖺𝗇𝖽 𝖢𝖺𝗇 𝖻𝖾 𝗎𝗌𝖾𝖽 𝖻𝗒 𝖾𝗏𝖾𝗋𝗒𝗈𝗇𝖾"""
+   ➥ 𝖳𝗁𝗂𝗌 𝖢𝗈𝗆𝗆𝖺𝗇𝖽 𝖢𝖺𝗇 𝖻𝖾 𝗎𝗌𝖾𝖽 𝖻𝗒 𝖾𝗏𝖾𝗋𝗒𝗈𝗇𝖾
+   /CARBON"""
     
     INFO_TXT ="""<b>𝖨𝗇𝖿𝗈</b>
 𝖦𝖾𝗍 𝗂𝗇𝖿𝗈𝗋𝗆𝖺𝗍𝗂𝗈𝗇 𝖺𝖻𝗈𝗎𝗍 𝗌𝗈𝗆𝖾𝗍𝗁𝗂𝗇𝗀!
