@@ -496,8 +496,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "pages":
         await query.answer()
     elif query.data == "start":
-        buttons =  [[
-                    InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/proautofilter_bot?startgroup=true')
+        buttons = [[
+                    InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/@ovieslandfilterv4_bot?startgroup=true')
                 ],[
                     InlineKeyboardButton('🤴ʙᴏᴛ ᴏᴡɴᴇʀ🤴',  url='https://t.me/MLDBadmin'),
                     InlineKeyboardButton('🍿ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ🍿', url='https://t.me/+kmEEWpBgDCg0YzA1')
