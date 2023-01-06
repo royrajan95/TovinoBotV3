@@ -33,3 +33,6 @@ pyromod~=1.5
 gtts
 yt_dlp
 wget
+Flask==2.2.2
+gunicorn++20.1.0
+aiohttp==3.8.1
