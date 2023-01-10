@@ -22,15 +22,15 @@ async def save_group(bot, message):
         if message.chat.id in temp.BANNED_CHATS:
             # Inspired from a boat of a banana tree
             buttons = [[
-                    InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/@movieslandfilterv4_bot?startgroup=true')
+                    InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url=f'http://t.me/Movieslandfilterv4_bot?startgroup=true')
                 ],[
-                    InlineKeyboardButton('🤴ʙᴏᴛ ᴏᴡɴᴇʀ🤴',  url='https://t.me/MoviesLandBackup'),
-                    InlineKeyboardButton('🍿ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ🍿', url='https://t.me/+kmEEWpBgDCg0YzA1')
+                    InlineKeyboardButton('ʙᴏᴛ ᴏᴡɴᴇʀ',  url='https://t.me/MoviesLandBackup'),
+                    InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url='https://t.me/+kmEEWpBgDCg0YzA1')
                 ],[
-                    InlineKeyboardButton('ℹ️ ʜᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('😊 ᴀʙᴏᴜᴛ', callback_data='about')
+                    InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
+                    InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
                 ],[
-                    InlineKeyboardButton('💥 ᴊᴏɪɴ ᴏᴜʀ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ 💥', url='https://t.me/MoviesLandBackup')
+                    InlineKeyboardButton('ᴊᴏɪɴ ᴏᴜʀ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ', url='https://t.me/MoviesLandBackup')
                   ]]
             reply_markup=InlineKeyboardMarkup(buttons)
             k = await message.reply(
@@ -74,15 +74,15 @@ async def leave_a_chat(bot, message):
         chat = chat
     try:
         buttons = [[
-                    InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/@movieslandfilterv4_bot?startgroup=true')
+                    InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url=f'http://t.me/Movieslandfilterv4_bot?startgroup=true')
                 ],[
-                    InlineKeyboardButton('🤴ʙᴏᴛ ᴏᴡɴᴇʀ🤴',  url='https://t.me/MoviesLandBackup'),
-                    InlineKeyboardButton('🍿ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ🍿', url='https://t.me/+kmEEWpBgDCg0YzA1')
+                    InlineKeyboardButton('ʙᴏᴛ ᴏᴡɴᴇʀ',  url='https://t.me/MoviesLandBackup'),
+                    InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url='https://t.me/+kmEEWpBgDCg0YzA1')
                 ],[
-                    InlineKeyboardButton('ℹ️ ʜᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('😊 ᴀʙᴏᴜᴛ', callback_data='about')
+                    InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
+                    InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
                 ],[
-                    InlineKeyboardButton('💥 ᴊᴏɪɴ ᴏᴜʀ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ 💥', url='https://t.me/MoviesLandBackup')
+                    InlineKeyboardButton('ᴊᴏɪɴ ᴏᴜʀ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ', url='https://t.me/MoviesLandBackup')
                   ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
